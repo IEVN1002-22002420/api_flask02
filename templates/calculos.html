@@ -8,15 +8,16 @@
         {{ datos_macro.datos('numero2','ingrese el numero 2') }}
 
         <div class="mb-3">
-            <label for="operacion" class="form-label">Operacion</label>
-            <select class="form-select" name="operacion" id="operacion">
+            <label for="opcion" class="form-label">Operacion</label>
+            <select class="form-select" name="opcion" id="opcion">
                 <option value="suma">suma</option>
-                <option value="resta">res</option>
-                <option value="multiplicacion">mul</option>
+                <option value="resta">Resta</option>
+                <option value="multiplicacion">Multiplicacion</option>
                 <option value="division">division</option>
             </select> 
         </div>
         <button type="submit" class="btn btn-primary">Calcular</button>
     </form>
-
+    <h1>La operacion de {{numero1}} y {{numero2}} = {{res}}</h1>
+    
     {%endblock%}
